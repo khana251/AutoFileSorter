@@ -3,8 +3,11 @@
 import os
 import shutil
 
-sourceFolder = r'Replace this with the location of files eg: C:\Users\JohnAppleseed\Desktop\sourceFolder'
-destinationFolder = r'Replace this with the location where sorted files should be (can be same as sourceFolder)'
+sourceFolder = input(r"Enter source folder, eg: C:\Users\JohnAppleseed\Desktop\sourceFolder:")
+destinationFolder = input(r"Enter destination folder, may or may not be same as source folder:")
+
+#sourceFolder = r'Replace this with the location of files eg: C:\Users\JohnAppleseed\Desktop\sourceFolder'
+#destinationFolder = r'Replace this with the location where sorted files should be (can be same as sourceFolder)'
 sourceFiles = os.listdir(sourceFolder)
 
 for file in sourceFiles:
